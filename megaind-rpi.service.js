@@ -20,8 +20,9 @@ const ON    = 1
 const OFF   = 0
 
 const broker = new ServiceBroker({
-	validator: "Fastest",
-	logger   : "Console",
+	validator  : "Fastest",
+	logger     : "Console",
+	transporter: "NATS"
 });
 
 broker.createService({
