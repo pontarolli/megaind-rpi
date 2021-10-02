@@ -13,7 +13,7 @@ Enable I2C communication first:
 ## Usage
 
 ```bash
-~$ git clone https://github.com/.../megaind-rpi.git
+~$ git clone https://github.com/pontarolli/megaind-rpi.git
 ~$ cd megaind-rpi/
 ~$ npm install
 ~$ npm run dev
