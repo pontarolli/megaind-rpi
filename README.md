@@ -10,15 +10,29 @@ Enable I2C communication first:
 ~$ sudo raspi-config
 ```
 
-## Usage
+## Install
 
 ```bash
+# 1. nats:2.1.7-linux
+# Run a container tranporter in localhost available at https://hub.docker.com/_/nats?tab=tags&page=1&ordering=last_updated&name=2.1.7-linux
+# nats://localhost:4222
+~$ docker run -d --name nats -p 4222:4222 nats:2.1.7-linux
+
+# 2. api service
+~$ git clone https://github.com/pontarolli/api
+~$ cd api/simple
+~$ npm install
+~$ node api.service.js
+
+# 3. megaind-rpi service
 ~$ git clone https://github.com/pontarolli/megaind-rpi.git
 ~$ cd megaind-rpi/
 ~$ npm install
 ~$ npm run dev
 ~$ mol $ ...
 ```
+
+## Usage
 
 # Voltages IO
 
