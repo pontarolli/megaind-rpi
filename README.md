@@ -65,7 +65,7 @@ Example:
     # If use api gateway
     # Try with Postman (https://www.postman.com/downloads/)
     
-    POST http://localhost:3000/megaind-rpi.getInputVoltage?
+    POST http://localhost:3000/megaind-rpi.setOutputVoltage?
     
     Header
     {
@@ -78,6 +78,9 @@ Example:
         "channel": 2,
         "value": 25
     }
+
+    # Try on terminal
+    curl --header "Content-Type: application/json" --request POST --data '{"stack":0,"channel":2, "value": 25}' http://localhost:3000/megaind-rpi.setOutputVoltage?
 
 ## getOutputVoltage
 
