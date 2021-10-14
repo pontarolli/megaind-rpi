@@ -63,7 +63,10 @@ Example:
     mol $ 0
     
     # If use api gateway
+    # Try with Postman (https://www.postman.com/downloads/)
+    
     POST http://localhost:3000/megaind-rpi.getInputVoltage?
+    
     Header
     {
         "Content-Type": "application/json"
