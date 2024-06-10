@@ -1,0 +1,24 @@
+{
+  "name": "daq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "megaind-rpi.service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "moleculer-runner --env",
+    "start": "moleculer-runner --env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "i2c-bus": "^5.2.3",
+    "moleculer": "^0.13.13",
+    "moleculer-repl": "^0.6.4",
+    "nats": "^1.4.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
