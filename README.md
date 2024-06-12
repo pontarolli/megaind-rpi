@@ -4,12 +4,12 @@
 This is the javascript library to control the [Industrial Automation Stackable Card for Raspberry Pi](https://sequentmicrosystems.com/product/raspberry-pi-industrial-automation/) using framework Moleculer. 
 
 ## Setup
-
-Enable I2C communication first:
+ 
+Enable I2C communication first
 ```bash
 ~$ sudo raspi-config
 ```
-
+ 
 ## Install
 
 ```bash
